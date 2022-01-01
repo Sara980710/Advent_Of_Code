@@ -5,7 +5,7 @@ import numpy as np
 current_directory = os.getcwd()
 
 if current_directory[-19:] == "Advent_Of_Code_2021":
-    file = open('3/input_mamma.txt', 'r')
+    file = open('3/input.txt', 'r')
 elif current_directory[-1:] == "2":
     file = open('input.txt', 'r')
 
