@@ -1,6 +1,5 @@
 mod day_1;
-
-
+mod day_2;
 
 fn main() {
     let args: Vec<String> = std::env::args().collect();
@@ -15,6 +14,10 @@ fn main() {
 
     match day {
         1 => day_1::get_elf_with_most_calories(),
+        2 => {
+            day_2::calculate_strategy_score();
+            day_2::calculate_strategy_score_corrected();
+        },
         _ => println!("Day {} is not implemented yet", day),
     }
 }
