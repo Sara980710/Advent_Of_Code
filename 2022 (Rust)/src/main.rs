@@ -1,5 +1,7 @@
 mod day_1;
 mod day_2;
+mod day_3;
+mod day_4;
 
 fn main() {
     let args: Vec<String> = std::env::args().collect();
@@ -18,6 +20,11 @@ fn main() {
             day_2::calculate_strategy_score();
             day_2::calculate_strategy_score_corrected();
         },
+        3 => {
+            day_3::sum_priorities_in_rucksack();
+            day_3::sum_grouped_priorities_in_rucksack();
+        },
+        4 => day_4::get_nr_of_overlapping_pairs(),
         _ => println!("Day {} is not implemented yet", day),
     }
 }
